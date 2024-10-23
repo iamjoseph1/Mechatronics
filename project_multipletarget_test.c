@@ -22,7 +22,7 @@
 #define PGAIN 200
 #define IGAIN 30
 #define DGAIN 50
-#define T 5000 // 마이크로 초 단위, 즉 5밀리초 의미
+#define T 5000 // 마이크로 초 단위, 즉 5밀리초 의미함
 
 // 그래프 저장용 배열 변수
 #define NUM_ROWS 9000 // 총 45초 동안 측정 가능한 분량
