@@ -391,12 +391,12 @@ int main()
             }
 
             if(flag == 1&&(errorPosition<targetpos*0.1)){ // par는 90% rising time
-                par[count] = checkTime - startTime;
+                par[count] = (checkTime - startTime)/1000000.0;
                 flag = 0;
             }
 
             if((checkTime - startTime >= par[count]) && (checkTime - startTime) < par[count] + 4000000){ //ITAE
-                ITAE[count] = ITAE[count] + (checkTime-startTime-par[count])*abs(errorPosition)*0.005; // (checkTime-startTime-par)를 곱해줘야되지 않을까요??
+                ITAE[count] = ITAE[count] + (checkTime/1000000.0-startTime/1000000.0-par[count])*abs(errorPosition)*0.005; // (checkTime-startTime-par)를 곱해줘야되지 않을까요??
             }
 
             updateDataArray();
