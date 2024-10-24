@@ -400,7 +400,7 @@ int main()
             }
 
             updateDataArray();
-            checkTimeBefore = checkTime; // 어차피 PID()내에 해당 기능이 있으니 여기는 없어도 될듯..?
+            checkTimeBefore = checkTime; // 어차피 PID()내에 해당 기능이 있으니 여기는 없어도 될듯
         }
     }
 
